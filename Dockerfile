@@ -1,4 +1,4 @@
-FROM docker:stable-dind
+FROM docker:stable
 
 RUN apk add --no-cache curl git py3-pip openssl bash ca-certificates
 RUN apk add --no-cache --virtual build-dependencies python3-dev libffi-dev openssl-dev gcc libc-dev make \
